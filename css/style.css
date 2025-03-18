@@ -1751,30 +1751,31 @@ figure.dotted-bg:before {
   color: #fff;
 }
 
-.unslate_co--footer .footer-site-logo a span {
+.footer-site-logo a span {
   color: #28a745;
 }
 
-.unslate_co--footer .footer-site-social {
+.footer-site-social {
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
 }
 
-.unslate_co--footer .footer-site-social li {
+.footer-site-social li {
   padding: 0;
   margin: 0;
   list-style: none;
   display: inline-block;
 }
 
-@media (max-width: 991.98px) {
-  .unslate_co--footer .footer-site-social li {
+@media (max-width: 900px) {
+  .footer-site-social li a{
     display: block;
+    margin: 10px 0;
   }
 }
 
-.unslate_co--footer .footer-site-social li a {
+.footer-site-social li a {
   display: inline-block;
   padding-left: 20px;
   padding-right: 20px;
@@ -1785,7 +1786,8 @@ figure.dotted-bg:before {
   font-weight: bold;
 }
 
-.unslate_co--footer .footer-site-social li a:hover, .unslate_co--footer .footer-site-social li a:focus {
+.footer-site-social li a:hover,
+.footer-site-social li a:focus {
   color: #fff;
 }
 

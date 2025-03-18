@@ -458,7 +458,7 @@
       </div>
       <!-- END .counter -->
 
-      <div class="unslate_co--section" id="testimonial-section">
+      <!-- <div class="unslate_co--section" id="testimonial-section">
         <div class="container">
           <div class="section-heading-wrap text-center mb-5">
             <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Happy Clients</span></h2>
@@ -517,10 +517,10 @@
               </div>
 
             </div>
-          </div>
+          </div> 
         </div>
 
-      </div>
+      </div> --->
       <!-- END testimonial -->
 
       <div class="unslate_co--section" id="journal-section">
@@ -729,12 +729,11 @@
           var name = $('#name').val();
           var msg = $('#message').val();
           var subject = $('#subject').val();
-          var statusElm = $('#status');
-          statusElm.empty();
+          
 
           // Email validation
           if (email.length > 5 && email.includes('@') && email.includes('.')) {
-            statusElm.append('<span>Email is valid. Sending...</sapn>');
+            alert('Email is valid. Sending...');
 
             // Send the email using EmailJS
             emailjs.send('service_17v4l2q', 'template_o86qq2p', {
@@ -743,13 +742,13 @@
               subject: subject,
               message: msg
             }).then(function (response) {
-              statusElm.append('<span>Message sent successfully!</span>');
+              alert('Message sent successfully!');
               $('#contactForm')[0].reset(); // Clear the form
             }, function (error) {
-              statusElm.append('<div>Oops! Something went wrong. Please try again.</div>');
+              alert('Oops! Something went wrong. Please try again.');
             });
           } else {
-            statusElm.append('<span>Email is not valid.</span>');
+            alert('Email is not valid.');
           }
         });
       });
