@@ -37,6 +37,12 @@ body, .unslate_co--site-inner {
   background: #000;
 }
 
+
+#dcrony{
+  height: 600px;
+  width: 550px;
+}
+
 ::-moz-selection {
   background: #000;
   color: #fff;
@@ -58,7 +64,7 @@ a, a:hover {
 }
 
 .unslate_co--site-inner {
-  margin-bottom: 400px;
+  margin-bottom: 100px;
   position: relative;
   width: 100%;
   z-index: 1;
@@ -1726,69 +1732,49 @@ figure.dotted-bg:before {
   color: #fff;
 }
 
-.unslate_co--footer {
+footer{
+  background-color: #191919;
+  height: 300px;
+  width: 100%;
   text-align: center;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 
-.unslate_co--footer a {
-  color: rgba(255, 255, 255, 0.6);
+footer .footer-site-logo{
+  margin-bottom: 60px;
+
 }
 
-.unslate_co--footer a:hover {
+footer .footer-site-logo a{
   color: #fff;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
-.unslate_co--footer .footer-site-logo {
-  margin-bottom: 30px;
-}
-
-.unslate_co--footer .footer-site-logo a {
-  font-size: 30px;
-  font-weight: 900;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-}
-
-.footer-site-logo a span {
+footer .footer-site-logo a span{
   color: #28a745;
+  font-size:4rem;
 }
 
-.footer-site-social {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.footer-site-social li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: inline-block;
-}
-
-@media (max-width: 900px) {
-  .footer-site-social li a{
+@media (width: 900px) {
+  footer .social {
     display: block;
-    margin: 10px 0;
   }
 }
 
-.footer-site-social li a {
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold;
+footer .social a{
+  color: #8a8282;
+  font-size: 1.1rem;
+  margin-right: 10px;
 }
 
-.footer-site-social li a:hover,
-.footer-site-social li a:focus {
-  color: #fff;
+footer .social a:hover{
+  color: #d6d3d3;
+}
+
+footer .site-copyright{
+  margin-top: 100px;
+  color: #8a8282;
 }
 
 .loader-portfolio-wrap {
