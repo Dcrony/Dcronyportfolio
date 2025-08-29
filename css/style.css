@@ -37,12 +37,6 @@ body, .unslate_co--site-inner {
   background: #000;
 }
 
-
-#dcrony{
-  height: 600px;
-  width: 550px;
-}
-
 ::-moz-selection {
   background: #000;
   color: #fff;
